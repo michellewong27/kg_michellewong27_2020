@@ -7,8 +7,21 @@
 //Remapping a letter means replacing all occurrences of it with another letter while the ordering of the letters remains unchanged.
 
 function charMapping(s1, s2){
-    //1. if the length of string 1 doesnt equal length of string 2, return false 
-    if(s1.length !== s2.length){
+    //if the length of string 1 doesnt equal length of string 2, return false 
+    //optimize by setting variable names to both strings length
+    let s1Length = s1.length
+    let s2Length = s2.length
+        
+    if(s1Length !== s2Length){
         return false;
-    }
+    }    
+     //set chars variable object to store chars from s1 as key & values from s2
+    let setChars = {};
+
+    //for loop that'll loop through each char in s1 
+        //see if the char exists in setChars
+        //if the char doesnt exist as a key in setChars
+            //then add it where s2 char equals the string
+        //if the char exists as a key in setChars already then compare it with s2 char
+
 }
